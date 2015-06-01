@@ -134,12 +134,12 @@ namespace AlchemyAPI
         private XmlDocument doRequest(HttpWebRequest handle, String outputMode)
         {
             HttpWebResponse response = (HttpWebResponse)handle.GetResponse();
-            //System.IO.StreamWriter file = new System.IO.StreamWriter("C:/Users/Achal Shantharam/Documents/Visual Studio 2010/Projects/AlchemyAPI/AlchemyAPI/Output.xml");
+            System.IO.StreamWriter file = new System.IO.StreamWriter("Outputfilepath");
             StreamReader istream = new StreamReader(response.GetResponseStream());
             string str = istream.ReadToEnd();
             Console.Write(str);
             Console.Read();
-          //  file.Write(str);
+            file.Write(str);
 
             XmlDocument doc = new XmlDocument();
 
