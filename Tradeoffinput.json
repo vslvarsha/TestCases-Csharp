@@ -1,0 +1,37 @@
+{
+ "subject": "Camera",
+  "columns": [
+    {
+      "key": "obj1",
+      "full_name": "Price",
+      "type": "NUMERIC",
+      "is_objective": true,
+      "goal": "MIN"
+    },
+    {
+      "key": "obj2",
+      "full_name": "Zoom",
+      "type": "NUMERIC",
+      "is_objective": true,
+      "goal": "MAX"
+    }
+  ],
+  "options": [
+    {
+      "key": "0",
+      "name": "cheap camera",
+      "values": {
+        "obj1": 120,
+        "obj2": 12.3
+      }
+    },
+    {
+      "key": "1",
+      "name": "expensive camera",
+      "values": {
+        "obj1": 170,
+        "obj2": 14.3
+      }
+    }
+  ]
+}
